@@ -1,10 +1,94 @@
-
 * {
-    /**sets margin & padding baseline*/
-    margin: 0px;
-    padding: 0px;
+  /**sets margin & padding baseline*/
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-        
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.header-links {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero-box {
+  display: flex;
+  flex: 1;
+  height: 25vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 40vh;
+  flex: 1;
+}
+
+.hero-right {
+  display: flex;
+  max-width: 40vh;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title,
+.hero-text,
+.hero-button-box,
+.hero button {
+  display: flex;
+}
+
+.links-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.links-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 20%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.link,
+p {
+  max-width: 20vh;
 }
