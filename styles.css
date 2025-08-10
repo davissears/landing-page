@@ -1,4 +1,7 @@
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   /**sets margin & padding baseline*/
   margin: 0px;
   padding: 0px;
@@ -15,7 +18,7 @@ body {
 }
 
 .logo {
-  display: flex;
+  flex: 1;
 }
 
 .header-links {
@@ -33,10 +36,13 @@ a {
   text-decoration: none;
 }
 
+.hero-section {
+  display: flex;
+}
+
 .hero-box {
   display: flex;
   flex: 1;
-  height: 25vh;
   align-items: center;
   justify-content: center;
 }
@@ -46,6 +52,16 @@ a {
   flex-direction: column;
   max-width: 40vh;
   flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+hero-text {
+  flex-wrap: wrap;
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  background-color: blue;
 }
 
 .hero-right {
@@ -56,15 +72,12 @@ a {
   justify-content: center;
 }
 
-.hero-title,
-.hero-text,
-.hero-button-box,
-.hero button {
+.hero-title .hero-text .hero-button-box .hero button {
   display: flex;
 }
 
 .links-section {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -74,7 +87,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 80%;
 }
 
 h2 {
@@ -84,11 +96,11 @@ h2 {
 .link {
   display: flex;
   flex-direction: column;
-  flex: 1 1 20%;
+  flex: 1 1 0;
   align-items: center;
-  justify-content: space-evenly;
 }
+
 .link,
 p {
-  max-width: 20vh;
+  width: 15vh;
 }
