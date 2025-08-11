@@ -5,6 +5,8 @@
   /**sets margin & padding baseline*/
   margin: 0px;
   padding: 0px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 body {
@@ -15,10 +17,13 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  background-color: #1f2937;
 }
 
 .logo {
   flex: 1;
+  color: #f9faf8;
+  font-size: 24px;
 }
 
 .header-links {
@@ -34,6 +39,8 @@ ul {
 
 a {
   text-decoration: none;
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 .hero-section {
@@ -45,6 +52,7 @@ a {
   flex: 1;
   align-items: center;
   justify-content: center;
+  background-color: #1f2937;
 }
 
 .hero-left {
@@ -56,12 +64,22 @@ a {
   justify-content: center;
 }
 
-hero-text {
+.hero-title {
+  display: flex;
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-text {
+  display: flex;
   flex-wrap: wrap;
-  flex: 1;
-  width: 100%;
-  text-align: center;
-  background-color: blue;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero-button {
+  display: flex;
 }
 
 .hero-right {
@@ -70,10 +88,6 @@ hero-text {
   flex: 1;
   align-items: center;
   justify-content: center;
-}
-
-.hero-title .hero-text .hero-button-box .hero button {
-  display: flex;
 }
 
 .links-section {
@@ -103,4 +117,14 @@ h2 {
 .link,
 p {
   width: 15vh;
+}
+
+
+
+
+
+
+.footer-box {
+  background-color: #1f2937;
+  color: 
 }
