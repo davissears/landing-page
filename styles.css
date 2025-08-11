@@ -16,11 +16,20 @@ body {
 
 .header {
   display: flex;
+  flex: 1;
   justify-content: space-between;
   background-color: #1f2937;
+  padding: 1em 10vh 1em 10vh;
+  align-items: center;
 }
 
 .logo {
+  flex: 1;
+  color: #f9faf8;
+  align-items: center;
+}
+
+h1 {
   flex: 1;
   color: #f9faf8;
   font-size: 24px;
@@ -28,13 +37,20 @@ body {
 
 .header-links {
   display: flex;
+  flex: 1;
+  justify-content: end;
 }
 
-ul {
+.links-list {
   display: flex;
-  list-style: none;
-  gap: 1rem;
+  flex: 1;
   flex-wrap: wrap;
+  list-style: none;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: end;
+  min-width: fit-content;
+  max-width: fit-content;
 }
 
 a {
@@ -45,23 +61,27 @@ a {
 
 .hero-section {
   display: flex;
+  flex: 1;
+  padding: 8vh 10vh 10vh 10vh;
+  background-color: #1f2937;
 }
 
 .hero-box {
   display: flex;
   flex: 1;
-  align-items: center;
+  flex-wrap: wrap;
+
   justify-content: center;
-  background-color: #1f2937;
+  padding: 0 0 0 0;
+  gap: 1em;
+  min-width: fit-content;
 }
 
 .hero-left {
   display: flex;
-  flex-direction: column;
-  max-width: 40vh;
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 0.5vh;
 }
 
 .hero-title {
@@ -73,33 +93,44 @@ a {
 
 .hero-text {
   display: flex;
-  flex-wrap: wrap;
   font-size: 18px;
   color: #e5e7eb;
 }
 
 .hero-button {
   display: flex;
+  background-color: #3882f6;
+  color: #e5e7eb;
+  border-radius: 5px;
+  padding: 0.3em 1em 0.3em 1em;
+  border-style: none;
+  margin-top: 0.5vh;
 }
 
 .hero-right {
   display: flex;
-  max-width: 40vh;
   flex: 1;
   align-items: center;
-  justify-content: center;
+}
+
+.hero-image {
+  display: flex;
+  flex: 1;
+  aspect-ratio: 16 / 9;
+  min-height: fit-content;
+  border-radius: 5px;
 }
 
 .links-section {
-  display: inline-flex;
+  display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  padding: 10vh;
 }
 
 .links-box {
   display: flex;
-  align-items: center;
+  flex: 1;
   justify-content: center;
 }
 
@@ -107,24 +138,24 @@ h2 {
   text-align: center;
 }
 
+.features-list {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+}
+
 .link {
   display: flex;
   flex-direction: column;
   flex: 1 1 0;
-  align-items: center;
+  max-width: min-content;
 }
-
-.link,
-p {
-  width: 15vh;
-}
-
-
-
-
-
 
 .footer-box {
   background-color: #1f2937;
-  color: 
+  color: ;
 }
